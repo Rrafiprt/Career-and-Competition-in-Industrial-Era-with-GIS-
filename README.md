@@ -1,0 +1,1 @@
+# Career-and-Competition-in-Industrial-Era-with-GIS-
