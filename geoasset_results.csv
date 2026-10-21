@@ -1,0 +1,16 @@
+asset_id,asset_name,asset_type,latitude,longitude,condition,age_years,importance,condition_score,age_score,importance_score,priority_score,priority
+AST-006,Lampu Jalan C,Lampu Jalan,-3.805,102.245,Rusak,9,5,100,90.0,100.0,97.5,Tinggi
+AST-009,Rambu Jalan C,Rambu,-3.775,102.285,Rusak,10,4,100,100.0,80.0,97.0,Tinggi
+AST-013,Lampu Jalan F,Lampu Jalan,-3.788,102.268,Rusak,8,5,100,80.0,100.0,95.0,Tinggi
+AST-002,Rambu Jalan A,Rambu,-3.795,102.27,Rusak,8,4,100,80.0,80.0,92.0,Tinggi
+AST-015,Lampu Jalan G,Lampu Jalan,-3.798,102.248,Perlu Perbaikan,7,5,60,70.0,100.0,68.5,Sedang
+AST-004,Lampu Jalan B,Lampu Jalan,-3.785,102.28,Perlu Perbaikan,7,5,60,70.0,100.0,68.5,Sedang
+AST-007,Tempat Sampah B,Tempat Sampah,-3.78,102.275,Perlu Perbaikan,6,2,60,60.0,40.0,57.0,Sedang
+AST-011,Tempat Sampah C,Tempat Sampah,-3.792,102.29,Perlu Perbaikan,5,2,60,50.0,40.0,54.5,Sedang
+AST-010,Lampu Jalan E,Lampu Jalan,-3.82,102.24,Baik,4,5,0,40.0,100.0,25.0,Rendah
+AST-001,Lampu Jalan A,Lampu Jalan,-3.79,102.26,Baik,2,5,0,20.0,100.0,20.0,Rendah
+AST-008,Lampu Jalan D,Lampu Jalan,-3.815,102.255,Baik,2,5,0,20.0,100.0,20.0,Rendah
+AST-012,Rambu Jalan D,Rambu,-3.802,102.235,Baik,3,4,0,30.0,80.0,19.5,Rendah
+AST-005,Rambu Jalan B,Rambu,-3.81,102.265,Baik,3,4,0,30.0,80.0,19.5,Rendah
+AST-014,Tempat Sampah D,Tempat Sampah,-3.812,102.282,Baik,2,2,0,20.0,40.0,11.0,Rendah
+AST-003,Tempat Sampah A,Tempat Sampah,-3.8,102.25,Baik,1,2,0,10.0,40.0,8.5,Rendah

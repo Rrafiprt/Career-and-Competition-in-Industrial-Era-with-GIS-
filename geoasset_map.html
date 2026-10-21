@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7dbfe889d08b4e5351b32138d416d3ec {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7dbfe889d08b4e5351b32138d416d3ec" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7dbfe889d08b4e5351b32138d416d3ec = L.map(
+                "map_7dbfe889d08b4e5351b32138d416d3ec",
+                {
+                    center: [-3.7977999999999996, 102.26320000000001],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f224dcc4b366d473b566088da5f20a49 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f224dcc4b366d473b566088da5f20a49.addTo(map_7dbfe889d08b4e5351b32138d416d3ec);
+        
+    
+            var circle_marker_a464a244423b708becd37b9424b025aa = L.circleMarker(
+                [-3.805, 102.245],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_7dbfe889d08b4e5351b32138d416d3ec);
+        
+    
+        var popup_591f909b3294ac0bc3863e81c66f7476 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_13c0d1abd579cf89812c409a03a76a14 = $(`<div id="html_13c0d1abd579cf89812c409a03a76a14" style="width: 100.0%; height: 100.0%;">     <b>Lampu Jalan C</b><br>     ID: AST-006<br>     Jenis: Lampu Jalan<br>     Kondisi: Rusak<br>     Usia: 9 tahun<br>     Skor prioritas: 97.5<br>     Prioritas: Tinggi     </div>`)[0];
+                popup_591f909b3294ac0bc3863e81c66f7476.setContent(html_13c0d1abd579cf89812c409a03a76a14);
+            
+        
+
+        circle_marker_a464a244423b708becd37b9424b025aa.bindPopup(popup_591f909b3294ac0bc3863e81c66f7476)
+        ;
+
+        
+    
+    
+            circle_marker_a464a244423b708becd37b9424b025aa.bindTooltip(
+                `<div>
+                     Lampu Jalan C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0113f335387664741adb6a1b32780c14 = L.circleMarker(
+                [-3.775, 102.285],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_7dbfe889d08b4e5351b32138d416d3ec);
+        
+    
+        var popup_f628b63553a3b343f393f189a76223f7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d2ef08eb9deca816ce4a88df02190190 = $(`<div id="html_d2ef08eb9deca816ce4a88df02190190" style="width: 100.0%; height: 100.0%;">     <b>Rambu Jalan C</b><br>     ID: AST-009<br>     Jenis: Rambu<br>     Kondisi: Rusak<br>     Usia: 10 tahun<br>     Skor prioritas: 97.0<br>     Prioritas: Tinggi     </div>`)[0];
+                popup_f628b63553a3b343f393f189a76223f7.setContent(html_d2ef08eb9deca816ce4a88df02190190);
+            
+        
+
+        circle_marker_0113f335387664741adb6a1b32780c14.bindPopup(popup_f628b63553a3b343f393f189a76223f7)
+        ;
+
+        
+    
+    
+            circle_marker_0113f335387664741adb6a1b32780c14.bindTooltip(
+                `<div>
+                     Rambu Jalan C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ed4ae989c5ef6aab5a4eb14b709a64bb = L.circleMarker(
+                [-3.788, 102.268],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_7dbfe889d08b4e5351b32138d416d3ec);
+        
+    
+        var popup_ffad79a7ed5d885032ba0f382bba240e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_996b36f69e325eff8f248e2d9118eb8f = $(`<div id="html_996b36f69e325eff8f248e2d9118eb8f" style="width: 100.0%; height: 100.0%;">     <b>Lampu Jalan F</b><br>     ID: AST-013<br>     Jenis: Lampu Jalan<br>     Kondisi: Rusak<br>     Usia: 8 tahun<br>     Skor prioritas: 95.0<br>     Prioritas: Tinggi     </div>`)[0];
+                popup_ffad79a7ed5d885032ba0f382bba240e.setContent(html_996b36f69e325eff8f248e2d9118eb8f);
+            
+        
+
+        circle_marker_ed4ae989c5ef6aab5a4eb14b709a64bb.bindPopup(popup_ffad79a7ed5d885032ba0f382bba240e)
+        ;
+
+        
+    
+    
+            circle_marker_ed4ae989c5ef6aab5a4eb14b709a64bb.bindTooltip(
+                `<div>
+                     Lampu Jalan F
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e972a804cc4639c11bf3a46fdc39dac7 = L.circleMarker(
+                [-3.795, 102.27],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_7dbfe889d08b4e5351b32138d416d3ec);
+        
+    
+        var popup_a8b6e7c240d75dd372a591c80a527bcd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_27955f7f73197eb1d61ef1a12cb3a120 = $(`<div id="html_27955f7f73197eb1d61ef1a12cb3a120" style="width: 100.0%; height: 100.0%;">     <b>Rambu Jalan A</b><br>     ID: AST-002<br>     Jenis: Rambu<br>     Kondisi: Rusak<br>     Usia: 8 tahun<br>     Skor prioritas: 92.0<br>     Prioritas: Tinggi     </div>`)[0];
+                popup_a8b6e7c240d75dd372a591c80a527bcd.setContent(html_27955f7f73197eb1d61ef1a12cb3a120);
+            
+        
+
+        circle_marker_e972a804cc4639c11bf3a46fdc39dac7.bindPopup(popup_a8b6e7c240d75dd372a591c80a527bcd)
+        ;
+
+        
+    
+    
+            circle_marker_e972a804cc4639c11bf3a46fdc39dac7.bindTooltip(
+                `<div>
+                     Rambu Jalan A
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_92b3fc48b3dafa8002dbc2bbb5296b6f = L.circleMarker(
+                [-3.798, 102.248],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_7dbfe889d08b4e5351b32138d416d3ec);
+        
+    
+        var popup_207bbefe194164070dd5a9b5d9e1e0aa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ece241c2075f3725a7ffd89a4f9345bf = $(`<div id="html_ece241c2075f3725a7ffd89a4f9345bf" style="width: 100.0%; height: 100.0%;">     <b>Lampu Jalan G</b><br>     ID: AST-015<br>     Jenis: Lampu Jalan<br>     Kondisi: Perlu Perbaikan<br>     Usia: 7 tahun<br>     Skor prioritas: 68.5<br>     Prioritas: Sedang     </div>`)[0];
+                popup_207bbefe194164070dd5a9b5d9e1e0aa.setContent(html_ece241c2075f3725a7ffd89a4f9345bf);
+            
+        
+
+        circle_marker_92b3fc48b3dafa8002dbc2bbb5296b6f.bindPopup(popup_207bbefe194164070dd5a9b5d9e1e0aa)
+        ;
+
+        
+    
+    
+            circle_marker_92b3fc48b3dafa8002dbc2bbb5296b6f.bindTooltip(
+                `<div>
+                     Lampu Jalan G
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_78d3716e99f9a32c99a6c60467530f92 = L.circleMarker(
+                [-3.785, 102.28],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_7dbfe889d08b4e5351b32138d416d3ec);
+        
+    
+        var popup_379f8da73c4e604bf7f6822fc6676c00 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_49ced1f986983a6054767693285033ed = $(`<div id="html_49ced1f986983a6054767693285033ed" style="width: 100.0%; height: 100.0%;">     <b>Lampu Jalan B</b><br>     ID: AST-004<br>     Jenis: Lampu Jalan<br>     Kondisi: Perlu Perbaikan<br>     Usia: 7 tahun<br>     Skor prioritas: 68.5<br>     Prioritas: Sedang     </div>`)[0];
+                popup_379f8da73c4e604bf7f6822fc6676c00.setContent(html_49ced1f986983a6054767693285033ed);
+            
+        
+
+        circle_marker_78d3716e99f9a32c99a6c60467530f92.bindPopup(popup_379f8da73c4e604bf7f6822fc6676c00)
+        ;
+
+        
+    
+    
+            circle_marker_78d3716e99f9a32c99a6c60467530f92.bindTooltip(
+                `<div>
+                     Lampu Jalan B
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_83fa2e36d81923449e1f98b4829be555 = L.circleMarker(
+                [-3.78, 102.275],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_7dbfe889d08b4e5351b32138d416d3ec);
+        
+    
+        var popup_30604399111b9854ec2f67395c8bc62d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_46217f5fbb47c2bc6192b8091386e6d0 = $(`<div id="html_46217f5fbb47c2bc6192b8091386e6d0" style="width: 100.0%; height: 100.0%;">     <b>Tempat Sampah B</b><br>     ID: AST-007<br>     Jenis: Tempat Sampah<br>     Kondisi: Perlu Perbaikan<br>     Usia: 6 tahun<br>     Skor prioritas: 57.0<br>     Prioritas: Sedang     </div>`)[0];
+                popup_30604399111b9854ec2f67395c8bc62d.setContent(html_46217f5fbb47c2bc6192b8091386e6d0);
+            
+        
+
+        circle_marker_83fa2e36d81923449e1f98b4829be555.bindPopup(popup_30604399111b9854ec2f67395c8bc62d)
+        ;
+
+        
+    
+    
+            circle_marker_83fa2e36d81923449e1f98b4829be555.bindTooltip(
+                `<div>
+                     Tempat Sampah B
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_581057e95c333e3f3a9778303f1172c7 = L.circleMarker(
+                [-3.792, 102.29],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_7dbfe889d08b4e5351b32138d416d3ec);
+        
+    
+        var popup_8be038f1f55ae0b88372defff6989dc9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d44d9ad8df41ee22bc31d6131e8ef48c = $(`<div id="html_d44d9ad8df41ee22bc31d6131e8ef48c" style="width: 100.0%; height: 100.0%;">     <b>Tempat Sampah C</b><br>     ID: AST-011<br>     Jenis: Tempat Sampah<br>     Kondisi: Perlu Perbaikan<br>     Usia: 5 tahun<br>     Skor prioritas: 54.5<br>     Prioritas: Sedang     </div>`)[0];
+                popup_8be038f1f55ae0b88372defff6989dc9.setContent(html_d44d9ad8df41ee22bc31d6131e8ef48c);
+            
+        
+
+        circle_marker_581057e95c333e3f3a9778303f1172c7.bindPopup(popup_8be038f1f55ae0b88372defff6989dc9)
+        ;
+
+        
+    
+    
+            circle_marker_581057e95c333e3f3a9778303f1172c7.bindTooltip(
+                `<div>
+                     Tempat Sampah C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a6b6a550814bdd282424b8bf02f3cba4 = L.circleMarker(
+                [-3.82, 102.24],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_7dbfe889d08b4e5351b32138d416d3ec);
+        
+    
+        var popup_a965814e4ed2545ec5fadd0aa4949bc0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b73c1da464e9645b3413630b9a3de0b9 = $(`<div id="html_b73c1da464e9645b3413630b9a3de0b9" style="width: 100.0%; height: 100.0%;">     <b>Lampu Jalan E</b><br>     ID: AST-010<br>     Jenis: Lampu Jalan<br>     Kondisi: Baik<br>     Usia: 4 tahun<br>     Skor prioritas: 25.0<br>     Prioritas: Rendah     </div>`)[0];
+                popup_a965814e4ed2545ec5fadd0aa4949bc0.setContent(html_b73c1da464e9645b3413630b9a3de0b9);
+            
+        
+
+        circle_marker_a6b6a550814bdd282424b8bf02f3cba4.bindPopup(popup_a965814e4ed2545ec5fadd0aa4949bc0)
+        ;
+
+        
+    
+    
+            circle_marker_a6b6a550814bdd282424b8bf02f3cba4.bindTooltip(
+                `<div>
+                     Lampu Jalan E
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_01456745bb7ea0c787b8b20bf908999b = L.circleMarker(
+                [-3.79, 102.26],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_7dbfe889d08b4e5351b32138d416d3ec);
+        
+    
+        var popup_7884ac608c9ce667139a126490e6a0e3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3c79bd85c2113406f74344bb9911d223 = $(`<div id="html_3c79bd85c2113406f74344bb9911d223" style="width: 100.0%; height: 100.0%;">     <b>Lampu Jalan A</b><br>     ID: AST-001<br>     Jenis: Lampu Jalan<br>     Kondisi: Baik<br>     Usia: 2 tahun<br>     Skor prioritas: 20.0<br>     Prioritas: Rendah     </div>`)[0];
+                popup_7884ac608c9ce667139a126490e6a0e3.setContent(html_3c79bd85c2113406f74344bb9911d223);
+            
+        
+
+        circle_marker_01456745bb7ea0c787b8b20bf908999b.bindPopup(popup_7884ac608c9ce667139a126490e6a0e3)
+        ;
+
+        
+    
+    
+            circle_marker_01456745bb7ea0c787b8b20bf908999b.bindTooltip(
+                `<div>
+                     Lampu Jalan A
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6c829a906aaedfacbddadb1f30dc9708 = L.circleMarker(
+                [-3.815, 102.255],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_7dbfe889d08b4e5351b32138d416d3ec);
+        
+    
+        var popup_b2531ef13dff55663c7a7d430b2e08c3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4e4f9595b9f9da31fee0c75b385dc0ca = $(`<div id="html_4e4f9595b9f9da31fee0c75b385dc0ca" style="width: 100.0%; height: 100.0%;">     <b>Lampu Jalan D</b><br>     ID: AST-008<br>     Jenis: Lampu Jalan<br>     Kondisi: Baik<br>     Usia: 2 tahun<br>     Skor prioritas: 20.0<br>     Prioritas: Rendah     </div>`)[0];
+                popup_b2531ef13dff55663c7a7d430b2e08c3.setContent(html_4e4f9595b9f9da31fee0c75b385dc0ca);
+            
+        
+
+        circle_marker_6c829a906aaedfacbddadb1f30dc9708.bindPopup(popup_b2531ef13dff55663c7a7d430b2e08c3)
+        ;
+
+        
+    
+    
+            circle_marker_6c829a906aaedfacbddadb1f30dc9708.bindTooltip(
+                `<div>
+                     Lampu Jalan D
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9d40dd67dfa7ff5bd7d7e9a56611557b = L.circleMarker(
+                [-3.802, 102.235],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_7dbfe889d08b4e5351b32138d416d3ec);
+        
+    
+        var popup_87d5ae828448553ab76c8f9f6f90c4ad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ad6c7580053c899f01e2e2410df9b26e = $(`<div id="html_ad6c7580053c899f01e2e2410df9b26e" style="width: 100.0%; height: 100.0%;">     <b>Rambu Jalan D</b><br>     ID: AST-012<br>     Jenis: Rambu<br>     Kondisi: Baik<br>     Usia: 3 tahun<br>     Skor prioritas: 19.5<br>     Prioritas: Rendah     </div>`)[0];
+                popup_87d5ae828448553ab76c8f9f6f90c4ad.setContent(html_ad6c7580053c899f01e2e2410df9b26e);
+            
+        
+
+        circle_marker_9d40dd67dfa7ff5bd7d7e9a56611557b.bindPopup(popup_87d5ae828448553ab76c8f9f6f90c4ad)
+        ;
+
+        
+    
+    
+            circle_marker_9d40dd67dfa7ff5bd7d7e9a56611557b.bindTooltip(
+                `<div>
+                     Rambu Jalan D
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ba960613c59be15f48a63dd844032a5b = L.circleMarker(
+                [-3.81, 102.265],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_7dbfe889d08b4e5351b32138d416d3ec);
+        
+    
+        var popup_3a6df48bab3c6be2128cc1d6f4133067 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_77cc96649fe5242d173b42a6672d0d00 = $(`<div id="html_77cc96649fe5242d173b42a6672d0d00" style="width: 100.0%; height: 100.0%;">     <b>Rambu Jalan B</b><br>     ID: AST-005<br>     Jenis: Rambu<br>     Kondisi: Baik<br>     Usia: 3 tahun<br>     Skor prioritas: 19.5<br>     Prioritas: Rendah     </div>`)[0];
+                popup_3a6df48bab3c6be2128cc1d6f4133067.setContent(html_77cc96649fe5242d173b42a6672d0d00);
+            
+        
+
+        circle_marker_ba960613c59be15f48a63dd844032a5b.bindPopup(popup_3a6df48bab3c6be2128cc1d6f4133067)
+        ;
+
+        
+    
+    
+            circle_marker_ba960613c59be15f48a63dd844032a5b.bindTooltip(
+                `<div>
+                     Rambu Jalan B
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_00f5fcfe8041fb0830ffe379433524ae = L.circleMarker(
+                [-3.812, 102.282],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_7dbfe889d08b4e5351b32138d416d3ec);
+        
+    
+        var popup_52748035c4d768347092fe5a5c508844 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b38cebe63ec8aab7db0dddf628436939 = $(`<div id="html_b38cebe63ec8aab7db0dddf628436939" style="width: 100.0%; height: 100.0%;">     <b>Tempat Sampah D</b><br>     ID: AST-014<br>     Jenis: Tempat Sampah<br>     Kondisi: Baik<br>     Usia: 2 tahun<br>     Skor prioritas: 11.0<br>     Prioritas: Rendah     </div>`)[0];
+                popup_52748035c4d768347092fe5a5c508844.setContent(html_b38cebe63ec8aab7db0dddf628436939);
+            
+        
+
+        circle_marker_00f5fcfe8041fb0830ffe379433524ae.bindPopup(popup_52748035c4d768347092fe5a5c508844)
+        ;
+
+        
+    
+    
+            circle_marker_00f5fcfe8041fb0830ffe379433524ae.bindTooltip(
+                `<div>
+                     Tempat Sampah D
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fa9a273fbf7e4e089528e734f7e3cb45 = L.circleMarker(
+                [-3.8, 102.25],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_7dbfe889d08b4e5351b32138d416d3ec);
+        
+    
+        var popup_7d5335b628ac10874bc271ef9feebf51 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1c805bda67bbfe0c15670d90739ce3c2 = $(`<div id="html_1c805bda67bbfe0c15670d90739ce3c2" style="width: 100.0%; height: 100.0%;">     <b>Tempat Sampah A</b><br>     ID: AST-003<br>     Jenis: Tempat Sampah<br>     Kondisi: Baik<br>     Usia: 1 tahun<br>     Skor prioritas: 8.5<br>     Prioritas: Rendah     </div>`)[0];
+                popup_7d5335b628ac10874bc271ef9feebf51.setContent(html_1c805bda67bbfe0c15670d90739ce3c2);
+            
+        
+
+        circle_marker_fa9a273fbf7e4e089528e734f7e3cb45.bindPopup(popup_7d5335b628ac10874bc271ef9feebf51)
+        ;
+
+        
+    
+    
+            circle_marker_fa9a273fbf7e4e089528e734f7e3cb45.bindTooltip(
+                `<div>
+                     Tempat Sampah A
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_f224dcc4b366d473b566088da5f20a49.addTo(map_7dbfe889d08b4e5351b32138d416d3ec);
+        
+</script>
+</html>
